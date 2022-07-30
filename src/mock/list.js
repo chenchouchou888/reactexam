@@ -104,7 +104,6 @@ module.exports = Mock.mock('/searchList', 'get', (options) => {
    const obj = JSON.parse(options.body)
    const reg = new RegExp(obj.searchKey)
    const currentPage = obj.currentPage
-   console.log(currentPage)
 	//接受参数：是JSON格式，需要转换成对象
     let ret = Mock.mock({
         'list|11':[{'id|+1':1, 'title':'2020 前端技术的趋势','info':'介绍Hzero前端开发的流程及规范，助力开发','img':'https://hsop-hmkt.fsh.bcebos.com/3/HSOP-BAIDU/155cdffbf2ba48d1890a611b428c1154@1643184989988.com/9914bc5c-b3d5-4129-aad4-c4d01ed89826',
