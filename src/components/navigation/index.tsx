@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import './index.less';
 import { useLocation } from 'react-router';
 import Searchbox from '../searchBox';
-import Buttonchose from '../buttonchose';
 import { useHistory } from 'react-router-dom';
 const index = () => {
     const inputref  = useRef()
@@ -39,21 +38,7 @@ const index = () => {
                     </div>
                 </ul>
             </div>
-            <div className='nav-side-wrapper'>
-                <ul>
-                    <li>综合</li>
-                    <li>关注</li>
-                    <li>后端</li>
-                    <li>前端</li>
-                    <li>Android</li>
-                    <li>iOS</li>
-                    <li>人工智能</li>
-                    <li>开发工具</li>
-                    <li>代码人生</li>
-                    <li>阅读</li>
-                </ul>
-                <span>标签管理</span>
-            </div>
+         
             <div className='video-center-header'>
                 <div className='title'>
                     视频中心
