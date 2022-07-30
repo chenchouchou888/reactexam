@@ -26,8 +26,9 @@ const index = (props:any) => {
     <ul className='type-list'>
     <label >视频分类</label>
     {
-    typeList.map((item:any)=>{
-      return (<li key={item.id} 
+    typeList.map((item:{id:string,info:string,chosen?:boolean})=>{
+      return (<li 
+        key={item.id}
         className={item.chosen?'chosen':''}
         onClick={()=>{
         let newList = typeList.map((i:any)=>{
@@ -40,7 +41,7 @@ const index = (props:any) => {
           newList[0].chosen = true;
         }
         dispatch(typeSearch({...store.getState().typesearchreducer,smallType:newList.filter((item)=>item.chosen).map((item)=>item.id)}))
-        setTypeList(newList as SetStateAction<any>)
+        setTypeList(newList as any)
       }}
       >{item.info}</li>)})
     }

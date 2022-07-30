@@ -49,10 +49,7 @@ module.exports = Mock.mock('/smallList','get',(data)=>{
                 },{
                     id:'06',
                     info:'海马汇'
-                },
-            {
-                
-            }]
+                },]
             },{
                 mainType:'02',
                 smallarr:[{
