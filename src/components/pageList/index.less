@@ -1,0 +1,72 @@
+.pageList {
+    display: flex;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: flex-end;
+    width: 100%;
+    cursor: pointer;
+
+    div {
+        background-size: cover;
+        background-position: center;
+        width: 20px;
+        height: 20px;
+    }
+
+    li {
+        width: 24px;
+        height: 24px;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .left-t {
+        background-image: url(../../icon/d-arrow-left.png);
+        &:hover{
+            background-image: url(../../icon/d-arrow-left-hover.png);
+        }
+        &.ban{
+            background-image: url(../../icon/d-arrow-left-ban.png) !important;
+        }
+    }
+    
+
+    .left {
+        background-image: url(../../icon/arrow-left.png);
+        &:hover{
+            background-image: url(../../icon/arrow-left-hover.png);
+        }
+        &.ban{
+            background-image: url(../../icon/arrow-left-ban.png) !important;
+        }
+    }
+
+    .right-t {
+        background-image: url(../../icon/d-arrow-right.png);
+        &:hover{
+            background-image: url(../../icon/d-arrow-right-orange.png);
+        }
+        &.ban{
+            background-image: url(../../icon/d-arrow-right-stop.png) !important;
+        }
+    }
+
+    .right {
+        background-image: url(../../icon/arrow-right.png);
+        &:hover{
+            background-image: url(../../icon/arrow-right-hover.png);
+        }
+        &.ban{
+            background-image: url(../../icon/arrow-right-ban.png) !important;
+        }
+    }
+
+    .chosen {
+        border: 1px solid #FF8A2B;
+        border-radius: 2px;
+        border-radius: 2px;
+    }
+}

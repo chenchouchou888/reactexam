@@ -1,0 +1,332 @@
+.nav-wrapper {
+    position: relative;
+    width: 100%;
+    height: 54px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    color: #4D4D4D;
+
+
+    .hand-icon {
+        margin-left: 24px;
+        margin-right: 24px;
+        width: 120px;
+        height: 27.48px;
+        background-position: center;
+        background-size: cover;
+        background-image: url('https://open.hand-china.com/static/logo-unlogin.9b9c161b.png');
+
+
+    }
+
+    ul.routeList {
+        display: flex;
+        align-items: center; //解决中英不在一行问题
+
+        li {
+            font-size: 14px;
+            box-sizing: border-box;
+            margin-left: 20px;
+            margin-right: 20px;
+            position: relative;
+
+            &:hover {
+                color: #ff8a2b;
+                cursor: pointer;
+            }
+
+        }
+    }
+}
+
+.zhezhaolist {
+    position: absolute;
+    z-index: 2;
+    width: 256px;
+    height: 56px;
+    right: 0px;
+    background-color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    div{
+        cursor: pointer;
+    }
+
+    .huiyuan {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        :hover {
+            cursor: pointer;
+        }
+    }
+
+    img {
+        width: auto;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.head-icon {
+    background: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201908%2F19%2F20190819150344_ALnaX.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1661391724&t=faf8fcff7eb1e65de103d5062013e52a');
+    background-position: center;
+    background-size: cover;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.nav-side-wrapper {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background-color: white;
+    box-shadow: 1px 0.1px 1px #86909C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    display: none;
+
+    ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        li {
+            margin: 0 13px 0 13px;
+
+            &:hover {
+                color: #3f7ef7;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    span {
+        margin-left: 260px;
+
+        &:hover {
+            color: #3f7ef7;
+            cursor: pointer;
+        }
+    }
+
+
+    ;
+}
+.kongzhi{
+    margin-left: 24px;
+    margin-right: 24px;
+    &:hover{
+        color: #ff8a2b;
+    }
+
+}
+.ding-icon {
+    width: 23px;
+    height: 23px;
+    background-image: url(../../icon/bell.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    &::after {
+        content: '99+';
+        font-family: PingFangSC-Medium;
+        font-size: 8px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        line-height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 26px;
+        height: 16px;
+        text-align: center;
+        border-radius: 10px;
+        right: -26px;
+        top: -5px;
+        background-color: #FF8A2B;
+        box-sizing: border-box;
+        
+    }
+
+    &:hover {
+        background-image: url(../../icon/bell-hover.png);
+        cursor: pointer;
+
+       
+    }
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes reversespin {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.is-out .spin {
+    animation: reversespin 0.3s linear;
+}
+
+.video-center-header {
+    background: url(https://help.open.hand-china.com/static/header.3889e35f.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 16px;
+
+    .title {
+        margin-top: 50px;
+        font-family: PingFangSC-Regular;
+        font-size: 32px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 32px;
+    }
+
+    .title-intro {
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 28px;
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+
+    .search-box-orange {
+        height: 40px;
+        display: flex;
+
+        input {
+            background: #FFFFFF;
+            border-radius: 4px 0 0 4px;
+            border-radius: 4px 0px 0px 4px;
+            width: 575px;
+            height: 40px;
+            padding-left: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: #FF8A2B;
+            border-radius: 0 4px 4px 0;
+            border-radius: 0px 4px 4px 0px;
+            width: 168px;
+            height: 40px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            span {
+                font-family: PingFangSC-Medium;
+                font-size: 16px;
+                color: #FFFFFF;
+                letter-spacing: 0.53px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.include-bottom {
+    line-height: 40px;
+
+    &:hover .spin {
+        animation: spin 0.3s linear forwards;
+
+
+    }
+
+    &:hover .hidden-window {
+        display: flex;
+    }
+
+    .spin {
+        display: inline-block;
+        background-image: url(../../icon/caret-bottom.png);
+        background-position: center;
+        background-size: cover;
+        margin-left: 2px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .hidden-window {
+        background-color: white;
+        box-shadow: 0 0 1px -1px rgba(0, 0, 0, .08), 0 1px 2px 0 rgba(0, 0, 0, .04), 0 2px 4px 1px rgba(0, 0, 0, .02);
+        width: 200px;
+        height: 60px;
+        position: absolute;
+        top: 40px;
+        left: -10px;
+        border-radius: 6px;
+        z-index: 3;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        box-sizing: border-box;
+        padding: 4px 8px 4px 8px;
+
+        .github-icon {
+            background-image: url('https://lf-cdn-tos.bytescm.com/obj/static/xitu_extension/static/github.46c47564.png');
+            background-position: center;
+            background-size: cover;
+            width: 30px;
+            height: 30px;
+            margin-right: 20px;
+        }
+
+        span {
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        &:hover {
+            background-color: #f7f8fa;
+
+        }
+
+    }
+}
