@@ -18,12 +18,11 @@ const index = () => {
     return (
         <div>
             <div className='nav-wrapper'>
-                <div className='hand-icon'></div>
-                <ul className='routeList'>
-                    <li 
-                    onClick={()=>{
+                <div className='hand-icon'  onClick={()=>{
                         history.push({pathname:'/'})
-                    }}>应用市场</li>
+                    }}></div>
+                <ul className='routeList'>
+                    <li >应用市场</li>
                     <li className={`include-bottom ${isIn ? 'is-in' : 'is-out'}`}>开发者<span className='spin'></span></li>
                     <li className={`include-bottom ${isIn ? 'is-in' : 'is-out'}`}>社区与合作伙伴<span className='spin'></span></li>
                     <li className={`include-bottom ${isIn ? 'is-in' : 'is-out'}`}>支持与服务<span className='spin'></span></li>
