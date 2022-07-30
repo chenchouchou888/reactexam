@@ -11,11 +11,61 @@
     .search-icon{
         width: 20px;
         height: 20px;
-        background-image: url(../../icon/search.svg);
+        background-image: url(../../icon/搜索.png);
         background-position: center;
         background-size: cover;
+        &:hover{
+            background-image: url(../../icon/搜索-hover.png);
+        }
+
+    }
+    .inout{
         margin-left: 24px;
+        width: 20px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        
+        input{
+            margin-right: 6px;
+            width: 120px;
+            height: 20px;
+            display: none;
+        }
+       &.out{
+        animation: out 0.38s ease-in forwards;
+       }
+       &.in{
+        animation: in  0.38s ease-in forwards;
+        border:2px solid #f4af7a;
+        border-radius: 6px;
+        padding-left: 10px;
+        input{
+            display: block;
+        }
+       }
+
     }
 
 
+}
+@keyframes in{
+    0%{
+        width: 20px;
+    }
+    70%{
+        width: 190px;
+    }
+    100%{
+        width: 200px;
+    }
+}
+@keyframes out{
+    0%{
+        width: 200px;
+    }
+    100%{
+        width: 20px;
+    }
 }
